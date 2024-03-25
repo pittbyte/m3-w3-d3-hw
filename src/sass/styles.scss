@@ -1,0 +1,90 @@
+
+//@import 'path/to/colors.scss';
+/* Variables */
+$main-width: 1350px;
+$main-min-height: 535px;
+$font-primary: Arial, sans-serif; 
+$color-primary: #333; 
+$color-secondary: #007bff; 
+
+   // Mixin for button
+   @mixin button-style {
+    background-color: rgb(218, 170, 14);
+    color: rgb(218, 170, 14);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: $font-primary;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($color-secondary, 10%);
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 170, 14); // Gold background
+    height: 50%; 
+    
+}
+/* Nest Main */
+main {
+    width: $main-width;
+    min-height: $main-min-height;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    #intro-text {
+        //position: absolute;
+        //top: 50%; 
+        //left: 50%; // Align horizontal center of the header
+        //transform: translate(-50%, -50%); 
+    }
+    #intro-image {
+        position: absolute;
+        top: 50%; // Decrease this value to move it up
+        left: 50%; // position horizontally as needed
+        
+    }
+        img {
+         // width: 100%; 
+         // height: auto; 
+         // max-width: 100%; 
+        //  border: 2px solid $color-primary; // Border for the image
+        }
+      } 
+    
+  
+      span {
+        font-family: 'Sacramento', cursive;
+      }
+      
+      h3, p {
+        font-family: $font-primary;
+      }
+  
+      h3 {
+        color: $color-primary;
+      }
+      @mixin position-right($right: 0, $top: auto, $position-type: absolute) {
+        position: $position-type;
+        right: $right;
+        top: $top;
+    }
+    
+    .submit-button {
+        @include button-style;
+        @include position-right(20%); 
+    }
+    
+    
+  
+
+

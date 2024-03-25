@@ -1,0 +1,38 @@
+/* Nest Nav */
+ 
+
+nav {
+    width: 1050px;
+    min-height: 600px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background: rgb(218, 170, 14); // Example background color
+   
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 90px;
+        li {
+          display: inline;
+          margin-right: 10px;
+    
+          a {
+            text-decoration: none;
+            color: white; // Set text color to white
+            font-family: Arial, sans-serif; // Set font to Arial
+    
+           
+          }
+        }
+      }
+    }
+footer {
+        position: absolute; // Absolute positioning
+        bottom: -40px; 
+        left: 20px; 
+        color: black; 
+        font-size: 12px; 
+       
+    }
